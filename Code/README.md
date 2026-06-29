@@ -150,7 +150,8 @@ print(f"Critical hours: {stress['critical_hours']}")
 The dashboard is the presentation layer. It connects to the Flask backend over HTTP and visualizes the data on an interactive map, charts, and a heat-stress alert panel. It never touches the database or Meteostat directly.
 Prerequisites
 The backend must be running before launching the dashboard. Make sure you have completed the backend setup above and that python app.py is running on http://localhost:5000.
-Running the dashboard
+
+## Running the dashboard
 
 Open parasole_dashboard.ipynb in Jupyter Notebook.
 Run all cells.
