@@ -7,3 +7,5 @@ Code/.env
 __pycache__/
 *.pyc
 .DS_Store
+.ipynb_checkpoints/
+heat_alert_*.csv
