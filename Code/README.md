@@ -148,21 +148,20 @@ print(f"Critical hours: {stress['critical_hours']}")
 # Parasole Dashboard (Jupyter Notebook)
 
 The dashboard is the presentation layer. It connects to the Flask backend over HTTP and visualizes the data on an interactive map, charts, and a heat-stress alert panel. It never touches the database or Meteostat directly.
-Prerequisites
+
+## Prerequisites
 The backend must be running before launching the dashboard. Make sure you have completed the backend setup above and that python app.py is running on http://localhost:5000.
 
 ## Running the dashboard
-
-Open parasole_dashboard.ipynb in Jupyter Notebook.
-Run all cells.
-The "Backend check" cell confirms the connection by listing the cities and stations.
+-Open parasole_dashboard.ipynb in Jupyter Notebook.
+-Run all cells.
+-The "Backend check" cell confirms the connection by listing the cities and stations.
 
 ## How to use it
-
-Select a city to see the station map (with a temperature heatmap) and the city-wide alert banner.
-Select a station to see its temperature, humidity, and precipitation charts, plus its heat-stress alerts.
-Adjust the temperature and humidity threshold sliders to change what counts as a critical hour. The charts update automatically.
-Click "Export Alert Report" to download a CSV of the critical periods for the selected station.
+-Select a city to see the station map (with a temperature heatmap) and the city-wide alert banner.
+-Select a station to see its temperature, humidity, and precipitation charts, plus its heat-stress alerts.
+-Adjust the temperature and humidity threshold sliders to change what counts as a critical hour. The charts update automatically.
+-Click "Export Alert Report" to download a CSV of the critical periods for the selected station.
 
 ## Notes for teammates
 
